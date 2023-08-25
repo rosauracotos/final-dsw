@@ -1,0 +1,21 @@
+@server = https://curly-capybara-gprprqj47rj3v9-8081.app.github.dev
+###
+GET {{server}}/api/peliculas
+###
+POST {{server}}/api/peliculas
+
+Content-Type: application/json
+{"nombre": "Infinity War"}
+###
+GET {{server}}/api/clientes
+###
+POST {{server}}/api/clientes
+Content-Type: application/json
+
+{"nombre": "Ezequiel"}
+GET {{server}}/api/boletos
+###
+GET {{server}}/api/boletos/todos
+###
+GET {{server}}/api/boletos/1/clientespelicula
+###
